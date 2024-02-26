@@ -7,6 +7,9 @@ TagManager:
   - CampoElectrico
   - Carga
   - CargaNegativa
+  - Barrera
+  - PoloTierra
+  - Electron
   layers:
   - Default
   - TransparentFX
@@ -43,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 1121746213
     locked: 0

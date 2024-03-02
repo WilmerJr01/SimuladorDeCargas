@@ -6,8 +6,6 @@ public class MoverConMouse : MonoBehaviour
 {
     
     // Update is called once per frame
-    // Variable para almacenar si se está manteniendo el click
-    private bool clickSostenido = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +17,8 @@ public class MoverConMouse : MonoBehaviour
     void Update()
     {
         // Verificar si se está presionando el botón izquierdo del ratón (o touch en dispositivos táctiles)
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
-            // Indicar que se está sosteniendo el click
-            clickSostenido = true;
 
             // Obtener la posición del cursor en el mundo
             Vector3 posicionCursor = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -30,11 +26,6 @@ public class MoverConMouse : MonoBehaviour
             posicionCursor.z = transform.position.z;
             // Asignar la posición al objeto
             transform.position = posicionCursor;
-        }
-        else
-        {
-            // Si no se está sosteniendo el click, se desactiva la variable
-            clickSostenido = false;
         }
     }
 }

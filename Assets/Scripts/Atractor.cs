@@ -7,6 +7,7 @@ public class Atractor : MonoBehaviour
     public GameObject objetoC; // Referencia al objeto C que queremos cambiar su sprite
     public Sprite nuevoSprite; // El nuevo sprite que queremos asignar al objeto C
     public float velocidad = 5f; // Velocidad de movimiento
+    public GameObject objetoBPrefab; // Referencia al Prefab del objeto B
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,12 @@ public class Atractor : MonoBehaviour
             {
                 Debug.LogError("Objeto C o nuevo sprite no asignados en el script del objeto A.");
             }
+            // Destruir el objeto A actual
+            Destroy(other.gameObject);
+
+            // Instanciar el objeto B en la misma posición y rotación que el objeto A
+            Instantiate(objetoBPrefab, other.transform.position, other.transform.rotation);
+
         }
     }
 }

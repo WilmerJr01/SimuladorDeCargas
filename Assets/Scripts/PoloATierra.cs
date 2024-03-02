@@ -15,8 +15,8 @@ public class PoloATierra : MonoBehaviour
     void Update()
     {
         // Definir las teclas personalizadas
-        KeyCode teclaArriba = KeyCode.I; // 'W' para mover hacia arriba
-        KeyCode teclaAbajo = KeyCode.K; // 'S' para mover hacia abajo
+        KeyCode teclaArriba = KeyCode.I; // 'I' para mover hacia arriba
+        KeyCode teclaAbajo = KeyCode.K; // 'K' para mover hacia abajo
 
         // Obtener la entrada del teclado usando las teclas personalizadas
         float movimientoVertical = 0f;

@@ -13,7 +13,7 @@ public class Mover : MonoBehaviour
         float movimientoVertical = Input.GetAxis("Vertical");
 
         // Calcular el desplazamiento basado en la entrada y la velocidad
-        Vector3 desplazamiento = new Vector3(movimientoHorizontal, movimientoVertical, 0) * velocidad * Time.deltaTime;
+        Vector3 desplazamiento = new Vector2(movimientoHorizontal, movimientoVertical) * velocidad * Time.deltaTime;
 
         // Aplicar el desplazamiento a la posición del objeto
         transform.position += desplazamiento;

@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CambiarMetodo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void CambiarEscena(string Name)
     {
-        
-    }
+        SceneManager.LoadScene(Name);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -10,6 +10,7 @@ TagManager:
   - Barrera
   - PoloTierra
   - Electron
+  - camSize
   layers:
   - Default
   - TransparentFX

@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fae15d7fb644f4489124f741ab8654f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
+  velocidad: 40
 --- !u!1 &502196213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,7 +3185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be461ede5f331247a9f41951b2b4a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
+  velocidad: 40
 --- !u!1 &904451827
 GameObject:
   m_ObjectHideFlags: 0

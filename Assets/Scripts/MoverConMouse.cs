@@ -19,7 +19,7 @@ public class MoverConMouse : MonoBehaviour
     void Update()
     {
         // Verificar si se está presionando el botón izquierdo del ratón (o touch en dispositivos táctiles)
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             // Indicar que se está sosteniendo el click
             clickSostenido = true;

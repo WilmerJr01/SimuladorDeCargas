@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Induccion.unity
     guid: cb63361a3bd51b342884bb1dc215c061
+  - enabled: 1
+    path: Assets/Scenes/Contacto.unity
+    guid: 00aac884b45a73041aebd5cfaf304374
   m_configObjects: {}
